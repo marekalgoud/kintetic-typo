@@ -1,7 +1,7 @@
 import * as THREE from "three"
 import { extend } from "react-three-fiber"
 
-class TextShaderMaterial extends THREE.ShaderMaterial {
+class TorusShaderMaterial extends THREE.ShaderMaterial {
   constructor() {
     super({
       uniforms: {
@@ -40,7 +40,7 @@ class TextShaderMaterial extends THREE.ShaderMaterial {
           // vTexture *= color;
           // vTexture *= vec3(uv.x, uv.y, 1.);
 
-          gl_FragColor = vec4((1. - vTexture) * shadow, 1.);
+          gl_FragColor = vec4((vTexture) * shadow, 1.);
         }
       `
     })
@@ -69,4 +69,4 @@ class TextShaderMaterial extends THREE.ShaderMaterial {
 
 }
 
-extend({ TextShaderMaterial })
+extend({ TorusShaderMaterial })
