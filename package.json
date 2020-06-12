@@ -8,11 +8,14 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "drei": "0.0.55",
+    "glslify": "^7.0.0",
+    "glslify-loader": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-three-fiber": "^4.2.8",
-    "three": "^0.117.1"
+    "three": "^0.117.1",
+    "troika-3d-text": "^0.28.0"
   },
   "scripts": {
     "start": "react-scripts start",

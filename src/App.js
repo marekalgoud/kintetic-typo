@@ -8,10 +8,7 @@ function App() {
   return (
   <>
   <nav className="nav">
-    <ul>
-      <li><Link to="/">TorusKnot</Link></li>
-      <li><Link to="/plane">Plane</Link></li>
-    </ul>
+    <Link to="/">TorusKnot</Link> | <Link to="/plane">Plane</Link>
   </nav>
   <Router>
     <TorusKnot path="/" />
