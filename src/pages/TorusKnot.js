@@ -51,7 +51,7 @@ function MovingText({children, position, rotation}) {
 
 function App() {
   return (<Canvas pixelRatio={window.devicePixelRatio}>
-    <PerspectiveCamera makeDefault fov={45} aspect={1} near={0.1} far={1000} position={[0, 0, 30]} />
+    <PerspectiveCamera makeDefault fov={45} aspect={1} near={0.1} far={1000} position={[0, 0, 40]} />
     <OrbitControls
       minPolarAngle={Math.PI / 4}
       maxPolarAngle={3 * Math.PI / 4}

@@ -59,7 +59,6 @@ class TorusShaderMaterial extends THREE.ShaderMaterial {
   }
 
   get time() {
-    console.log('uniform', this.uniforms.time.value)
     return this.uniforms.time.value
   }
 

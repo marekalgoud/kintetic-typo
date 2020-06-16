@@ -17,7 +17,7 @@ function MovingText({children, position, rotation }) {
     const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000)
 
     
-    camera.position.z = 75
+    camera.position.z = 70
     return [scene, target, camera]
   }, [])
 
@@ -89,15 +89,13 @@ All you need is love and understanding
 Hey, ring the bell and let the people know
 We're so happy and we're celebratin'
 Let your feelings show
-
-Love is all, yes love is all at the Butterfly Ball
-Love is big, love is small
-Love is free, love is all
-At the Butterfly Ball`
+`
 
 
 
   return (<Canvas pixelRatio={window.devicePixelRatio}>
+    {/* <gridHelper />
+    <axesHelper /> */}
     <PerspectiveCamera makeDefault fov={45} aspect={1} near={0.1} far={1000} position={[0, 0, 30]} />
     <OrbitControls
       minPolarAngle={Math.PI / 4}
