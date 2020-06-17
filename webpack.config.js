@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devServer: {
@@ -42,6 +43,17 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./public/index.html",
             filename: "./index.html"
+        }),
+        new CopyPlugin({
+            patterns: [
+              { from: 'public/fonts', to: 'fonts' },
+              { from: 'public/favicon.ico' },
+              { from: 'public/manifest.json' },
+              { from: 'public/robots.txt' },
+            ],
+            options: {
+              concurrency: 100,
+            },
         })
     ]
 };
